@@ -11,7 +11,7 @@ const Countries = () => {
 
 
     useEffect(() => {
-		fetch("http://localhost:8000/api/countries")
+		fetch("https://maggots.herokuapp.com/api/countries")
 			.then((res) => res.json())
 			.then(
 				(res) => {
@@ -26,7 +26,7 @@ const Countries = () => {
 	}, []);
 
 	const deleteCountry = (id, e) => {
-		fetch("http://localhost:8000/api/countries/" + id, {
+		fetch("https://maggots.herokuapp.com/api/countries/" + id, {
 			method: "DELETE",
 			headers: {
 				Accept: "application/json",
