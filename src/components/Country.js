@@ -11,7 +11,7 @@ const Country = () => {
 	const auth = useContext(AuthContext);
 	const hs = { Accept: "application/json", "Content-Type": "application/json", Authorization: `Bearer ${auth.getToken()}`,
 	 };
-	const url = `http://localhost:8000/api/countries`;
+	const url = `https://maggots.herokuapp.com/api/countries`;
 
 	useEffect(() => {
 		if (id)
